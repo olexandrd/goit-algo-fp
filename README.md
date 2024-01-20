@@ -28,4 +28,6 @@ Set complexity of drawing for start.
 
 Exit: by clossing Python GUI window or by keyboard interruption (Ctrl+C).
 
+## Dijkstra with heap
 
+Added [Dijkstra algorithm](03/dijkstra_with_heap.py) that uses heap for calculations.  
