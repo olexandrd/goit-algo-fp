@@ -1,6 +1,13 @@
 # Algorithm cource final project 
 
+Table of content 
+1. [Linked lists](#1-linked-lists)
+2. [Build Pythagoras Tree using recursion](#2-build-pythagoras-tree-using-recursion)
+3. [Dijkstra with heap](#3-dijkstra-with-heap)
+4. [Heap visualisation](#4-heap-visualisation)
+
 ## 1. Linked lists
+
 Added following fucnctions:
 * Reverce linked list, [link](01/linked_list.py#L65)
 * Sort list (incertion sort), [link](01/linked_list.py#L75)
@@ -28,6 +35,8 @@ Set complexity of drawing for start.
 
 Exit: by clossing Python GUI window or by keyboard interruption (Ctrl+C).
 
-## Dijkstra with heap
+## 3. Dijkstra with heap
 
 Added [Dijkstra algorithm](03/dijkstra_with_heap.py) that uses heap for calculations.  
+
+## 4. Heap visualisation 
