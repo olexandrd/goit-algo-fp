@@ -8,4 +8,24 @@ Added following fucnctions:
 
 Tests can be found [here](01/tests.py)
 
+## 2. Build Pythagoras Tree using recursion
+
+Code on [02/pythagoras_tree.py](02/pythagoras_tree.py) draws fractal Pythagoras Tree using Turtle lib. 
+
+User has ability to set complexity of drowing using command line prompt. 
+
+### Requirements
+
+Python 3, below 3.9.
+
+### Usage
+
+Launch:
+```
+python3 02/pythagoras_tree.py
+```
+Set complexity of drawing for start.
+
+Exit: by clossing Python GUI window or by keyboard interruption (Ctrl+C).
+
 
