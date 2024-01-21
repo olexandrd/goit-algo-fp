@@ -40,3 +40,6 @@ Exit: by clossing Python GUI window or by keyboard interruption (Ctrl+C).
 Added [Dijkstra algorithm](03/dijkstra_with_heap.py) that uses heap for calculations.  
 
 ## 4. Heap visualisation 
+
+Code on [04/heap.py](04/heap.py) uses functions from example for visualization heap and [this functions](04/heap.py#L53-L70) for converting provided list to heap and prepare it for usage on visualization functions.   
+
