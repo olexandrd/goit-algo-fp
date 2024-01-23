@@ -43,3 +43,5 @@ Added [Dijkstra algorithm](03/dijkstra_with_heap.py) that uses heap for calculat
 
 Code on [04/heap.py](04/heap.py) uses functions from example for visualization heap and [this functions](04/heap.py#L53-L70) for converting provided list to heap and prepare it for usage on visualization functions.   
 
+## 5. DFS & BFS visualisation
+
