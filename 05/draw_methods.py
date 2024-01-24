@@ -4,6 +4,7 @@ from copy import copy
 import networkx as nx
 import matplotlib.pyplot as plt
 
+from constants import data32 as data
 
 class Node:
     def __init__(self, key, color="skyblue"):
@@ -49,31 +50,34 @@ def draw_tree(tree_root):
     plt.show()
 
 
-def insert_to_tree(root, key, color):
-    if root is None:
-        return Node(key, color=color)
-    else:
-        if key < root.val:
-            root.left = insert_to_tree(root.left, key, color=color)
-        else:
-            root.right = insert_to_tree(root.right, key, color=color)
-    return root
-
-
-def generate_colormap(data: list) -> list:
-    step = 0.9 / len(data)
-    colormap = [(0.8, (step * x), (step * x)) for x in (range(1, len(data) + 1))]
+def generate_colormap(data: list) -> dict:
+    step = 0.8 / len(data)
+    colormap = {element: (0.8, step * index, step * index) for index, element in enumerate(data)}
     return colormap
 
 
-def build_binary_tree(node_list: list):
-    colormap = generate_colormap(node_list)
-    node_dict = zip(node_list, colormap)
-    root = None
-    for node, color in node_dict:
-        root = insert_to_tree(root, node, color)
+def insert_to_tree(root, key):
+    if root is None:
+        return Node(key)
+    else:
+        if key < root.val:
+            root.left = insert_to_tree(root.left, key)
+        else:
+            root.right = insert_to_tree(root.right, key)
     return root
 
+
+def build_binary_tree(node_list: list):
+    root = None
+    for node in node_list:
+        root = insert_to_tree(root, node)
+    return root
+
+def change_node_color(node, colormap):
+    if node is not None:
+        node.color = colormap[node.val]
+        change_node_color(node.left, colormap)
+        change_node_color(node.right, colormap)
 
 def drawing(nodes):
     root = build_binary_tree(nodes)
@@ -81,5 +85,4 @@ def drawing(nodes):
 
 
 if __name__ == "__main__":
-    data = [16, 8, 24, 4, 12, 20, 28, 2, 6, 10, 14, 18, 22, 26, 30, 1, 3, 5, 7, 9, 11, 13, 15, 17 ,19, 21, 23, 25, 27, 29, 31]
     drawing(data)

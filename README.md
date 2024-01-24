@@ -45,3 +45,12 @@ Code on [04/heap.py](04/heap.py) uses functions from example for visualization h
 
 ## 5. DFS & BFS visualisation
 
+Added opportunity for visualisation DFS and BFS for binary trees.
+* [DFS](05/dfs.py)
+* [BFS](05/bfs.py)
+
+Node colors are changed using node order returned by DFS or BFS respectively. Colors are changed using RGB tuples generated on [comprehension](05/draw_methods.py#L53) 
+```
+step = 0.8 / len(data)
+{element: (0.8, step * index, step * index) for index, element in enumerate(data)}  
+```

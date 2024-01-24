@@ -1,54 +1,28 @@
-from collections import deque
-
-
-def dfs_recursive(graph, vertex, visited=None):
-    if visited is None:
-        visited = set()
-
-    visited.add(vertex)
-    result = [vertex]
-
-    for neighbor in graph[vertex]:
-        if neighbor not in visited:
-            result.extend(dfs_recursive(graph, neighbor, visited))
-
-    return result
-
-
-def bfs_recursive(graph, queue, visited=None):
-    if visited is None:
-        visited = set()
-    result = []
+def bfs_transversal(root):
+    queue = [root]
+    order = []
     while queue:
-        vertex = queue.popleft()
-        if vertex not in visited:
-            result.append(vertex)
-            visited.add(vertex)
-            queue.extend(set(graph[vertex]) - visited)
-    return result
-
-def dfs_recursive_steps(graph, vertex, visited=None):
-    if visited is None:
-        visited = set()
-    visited.add(vertex)
-    
-    for neighbor in graph[vertex]:
-        print(f"|Node: {vertex}| neighbor: {neighbor}| Visited: {visited}|")
-        if neighbor not in visited:
-            dfs_recursive_steps(graph, neighbor, visited)
+        node = queue.pop(0)
+        order.append(node.val)
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
+    return order
 
 
-def bfs_recursive_steps(graph, queue, visited=None):
-    if visited is None:
-        visited = set()
-    if not queue:
-        return
-    vertex = queue.popleft()
-    if vertex not in visited:
-        print(f"|Node: {vertex}| Queue: {queue}| Visited: {visited}|")
-        visited.add(vertex)
-        queue.extend(set(graph[vertex]) - visited)
-    bfs_recursive_steps(graph, queue, visited)
+def dfs_transversal(root):
+    stack = [root]
+    order = []
+    while stack:
+        node = stack.pop()
+        order.append(node.val)
+        if node.right:
+            stack.append(node.right)
+        if node.left:
+            stack.append(node.left)
+    return order
+
 
 if __name__ == "__main__":
     print("Do not run this file")
