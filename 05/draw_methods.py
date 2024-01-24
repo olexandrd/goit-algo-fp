@@ -60,7 +60,14 @@ def insert_to_tree(root, key, color):
     return root
 
 
-def build_binary_tree(node_list: list, colormap: list):
+def generate_colormap(data: list) -> list:
+    step = 0.9 / len(data)
+    colormap = [(0.8, (step * x), (step * x)) for x in (range(1, len(data) + 1))]
+    return colormap
+
+
+def build_binary_tree(node_list: list):
+    colormap = generate_colormap(node_list)
     node_dict = zip(node_list, colormap)
     root = None
     for node, color in node_dict:
@@ -68,13 +75,11 @@ def build_binary_tree(node_list: list, colormap: list):
     return root
 
 
-def drawing(nodes, colormap: list = None):
-    root = build_binary_tree(nodes, colormap)
+def drawing(nodes):
+    root = build_binary_tree(nodes)
     draw_tree(root)
 
 
 if __name__ == "__main__":
-    data = [10, 17, 4, 2, 3, 1, 7, 6, 8, 12, 11, 13, 19, 18, 42]
-    colormap = [(1-(0.7/x), 1 - (0.5/x) ** 1.1, (0.1/x)**1.6) for x in (range(1, len(data)+1))]
-    print(colormap)
-    drawing(data, colormap)
+    data = [16, 8, 24, 4, 12, 20, 28, 2, 6, 10, 14, 18, 22, 26, 30, 1, 3, 5, 7, 9, 11, 13, 15, 17 ,19, 21, 23, 25, 27, 29, 31]
+    drawing(data)
