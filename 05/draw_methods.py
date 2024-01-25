@@ -51,7 +51,7 @@ def draw_tree(tree_root):
 
 
 def generate_colormap(data: list) -> dict:
-    step = 0.8 / len(data)
+    step = 1 / len(data)
     colormap = {element: (0.8, step * index, step * index) for index, element in enumerate(data)}
     return colormap
 

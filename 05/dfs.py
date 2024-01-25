@@ -1,6 +1,5 @@
 from search_methods import dfs_transversal
 from draw_methods import (
-    drawing,
     build_binary_tree,
     change_node_color,
     generate_colormap,

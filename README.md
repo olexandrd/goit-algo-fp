@@ -1,10 +1,12 @@
 # Algorithm cource final project 
 
-Table of content 
+Table of Contents
 1. [Linked lists](#1-linked-lists)
 2. [Build Pythagoras Tree using recursion](#2-build-pythagoras-tree-using-recursion)
 3. [Dijkstra with heap](#3-dijkstra-with-heap)
-4. [Heap visualisation](#4-heap-visualisation)
+4. [Heap visualization](#4-heap-visualization)
+5. [DFS & BFS visualization](#5-dfs--bfs-visualization)
+6. [Greedy Algorithm](#6-greedy-algorithm)
 
 ## 1. Linked lists
 
@@ -51,6 +53,9 @@ Added opportunity for visualisation DFS and BFS for binary trees.
 
 Node colors are changed using node order returned by DFS or BFS respectively. Colors are changed using RGB tuples generated on [comprehension](05/draw_methods.py#L53) 
 ```
-step = 0.8 / len(data)
+step = 1 / len(data)
 {element: (0.8, step * index, step * index) for index, element in enumerate(data)}  
 ```
+
+## 6. Greedy Algorithm
+
