@@ -4,9 +4,10 @@ Table of Contents
 1. [Linked lists](#1-linked-lists)
 2. [Build Pythagoras Tree using recursion](#2-build-pythagoras-tree-using-recursion)
 3. [Dijkstra with heap](#3-dijkstra-with-heap)
-4. [Heap visualization](#4-heap-visualization)
-5. [DFS & BFS visualization](#5-dfs--bfs-visualization)
-6. [Greedy Algorithm](#6-greedy-algorithm)
+4. [Heap visualization](#4-heap-visualisation)
+5. [DFS & BFS visualization](#5-dfs--bfs-visualisation)
+6. [Greedy Algorithm](#6-greedy-and-dp-algorithms)
+7. [Monte Carlo](#7-monte-carlo)
 
 ## 1. Linked lists
 
@@ -70,3 +71,4 @@ Dynamic programming algorithm result: ['potato', 'cola', 'pepsi', 'pizza']
 This results shows that fast Greedy algorithm may not return the best possible solution.
 
 
+## 7. Monte Carlo 
