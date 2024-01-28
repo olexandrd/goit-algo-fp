@@ -10,18 +10,18 @@ Table of Contents
 
 ## 1. Linked lists
 
-Added following fucnctions:
-* Reverce linked list, [link](01/linked_list.py#L65)
-* Sort list (incertion sort), [link](01/linked_list.py#L75)
+Added the following functions:
+* Reverse linked list, [link](01/linked_list.py#L65)
+* Sort list (insertion sort), [link](01/linked_list.py#L75)
 * Merge and sort linked lists, [link](01/linked_list.py#L85)
 
 Tests can be found [here](01/tests.py)
 
 ## 2. Build Pythagoras Tree using recursion
 
-Code on [02/pythagoras_tree.py](02/pythagoras_tree.py) draws fractal Pythagoras Tree using Turtle lib. 
+Code on [02/pythagoras_tree.py](02/pythagoras_tree.py) draws a fractal Pythagoras Tree using the Turtle library. 
 
-User has ability to set complexity of drowing using command line prompt. 
+Users have the ability to set the complexity of drawing using the command line prompt. 
 
 ### Requirements
 
@@ -61,10 +61,12 @@ step = 1 / len(data)
 
 Code on [algorithms.py](06/algorithms.py) contains Greedy and DP Algorithms. 
 Greedy and DP Algorithms shows different results for the same budget (100):
+
 ```
 Greedy algorithm result: ['pizza', 'hamburger', 'pepsi']
 Dynamic programming algorithm result: ['potato', 'cola', 'pepsi', 'pizza']
 ```
+
 This results shows that fast Greedy algorithm may not return the best possible solution.
 
 
