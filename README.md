@@ -1,4 +1,4 @@
-# Algorithm cource final project 
+# Algorithm course final project 
 
 Table of Contents
 1. [Linked lists](#1-linked-lists)
@@ -57,5 +57,14 @@ step = 1 / len(data)
 {element: (0.8, step * index, step * index) for index, element in enumerate(data)}  
 ```
 
-## 6. Greedy Algorithm
+## 6. Greedy and DP Algorithms
+
+Code on [algorithms.py](06/algorithms.py) contains Greedy and DP Algorithms. 
+Greedy and DP Algorithms shows different results for the same budget (100):
+```
+Greedy algorithm result: ['pizza', 'hamburger', 'pepsi']
+Dynamic programming algorithm result: ['potato', 'cola', 'pepsi', 'pizza']
+```
+This results shows that fast Greedy algorithm may not return the best possible solution.
+
 
