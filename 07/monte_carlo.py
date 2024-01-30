@@ -7,11 +7,11 @@ def roll_dice(dices: int):
     return sum(random.randint(1, 6) for _ in range(dices))
 
 
-def dice_result(rolls: int) -> dict:
-    dice_result = {i: 0 for i in range(2, 13)}
+def dice_result(rolls: int, dices: int=2) -> dict:
+    dice_result = {i: 0 for i in range(dices, dices*6+1)}
 
     for roll in range(rolls):
-        dice_result[roll_dice(2)] += 1
+        dice_result[roll_dice(dices)] += 1
 
     dice_result_occurrence = {
         sum: occurrences / rolls for sum, occurrences in dice_result.items()
