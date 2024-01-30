@@ -4,8 +4,8 @@ Table of Contents
 1. [Linked lists](#1-linked-lists)
 2. [Build Pythagoras Tree using recursion](#2-build-pythagoras-tree-using-recursion)
 3. [Dijkstra with heap](#3-dijkstra-with-heap)
-4. [Heap visualization](#4-heap-visualisation)
-5. [DFS & BFS visualization](#5-dfs--bfs-visualisation)
+4. [Heap visualisation](#4-heap-visualisation)
+5. [DFS & BFS visualisation](#5-dfs--bfs-visualisation)
 6. [Greedy Algorithm](#6-greedy-and-dp-algorithms)
 7. [Monte Carlo](#7-monte-carlo)
 
@@ -71,4 +71,24 @@ Dynamic programming algorithm result: ['potato', 'cola', 'pepsi', 'pizza']
 This results shows that fast Greedy algorithm may not return the best possible solution.
 
 
-## 7. Monte Carlo 
+## 7. Monte-Carlo 
+
+On [Monte-Carlo](07/monte_carlo.py) method simulation with 2 dices got the following result of dices sum occurrence:
+
+| Sum | Occurrence |
+| --- | ---------- |
+| 2 | 2.73% |
+| 3 | 6.01% |
+| 4 | 8.44% |
+| 5 | 11.05% |
+| 6 | 13.90% |
+| 7 | 16.88% |
+| 8 | 14.51% |
+| 9 | 10.98% |
+| 10 | 7.90% |
+| 11 | 5.12% |
+| 12 | 2.48% |
+
+According to chart, results shows normal distribution.
+
+![dices sum](07/images/Figure_1.png)
