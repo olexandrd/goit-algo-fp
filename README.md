@@ -92,6 +92,8 @@ On [Monte-Carlo](07/monte_carlo.py) method simulation with 2 dices got the follo
 According to chart, results shows normal distribution. 
 
 2 dices sum:
+
 ![2 dices sum](07/images/Figure_1.png)
 8 dices sum:
+
 ![8 dices sum](07/images/Figure_2.png)
